@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Weather Forecast</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+</head>
+<body>
+  <div class="weather-container animate__animated animate__fadeIn">
+    <div class="search-box">
+      <input id="city-input" type="text" placeholder="Enter city name">
+      <button id="search-btn"><i class="fa fa-search"></i></button>
+    </div>
+    <div id="weather-card" class="weather-card hidden">
+      <h2 id="city-name"></h2>
+      <p id="date"></p>
+      <div class="weather-info">
+        <img id="weather-icon" src="" alt="Weather Icon">
+        <div id="temperature"></div>
+      </div>
+      <p id="description"></p>
+      <div id="details">
+        <span id="humidity"></span>
+        <span id="wind"></span>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
